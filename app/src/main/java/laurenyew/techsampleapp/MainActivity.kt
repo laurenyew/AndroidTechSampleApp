@@ -1,5 +1,6 @@
 package laurenyew.techsampleapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -11,6 +12,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import laurenyew.techsampleapp.roomWithAView.RoomWithAViewActivity
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -69,8 +71,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 //Return home
             }
             R.id.nav_livedata_room -> {
-                //TODO: Go to the livedata room code sample
-                //
+                //Go to the livedata room code sample
+                val intent = Intent(this, RoomWithAViewActivity::class.java)
+                startActivity(intent)
             }
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
