@@ -1,4 +1,4 @@
-package laurenyew.techsampleapp.roomWithAView
+package laurenyew.techsampleapp.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -8,13 +8,14 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import laurenyew.techsampleapp.roomWithAView.data.Word
 import laurenyew.techsampleapp.roomWithAView.data.WordRoomDatabase
+import laurenyew.techsampleapp.roomWithAView.models.WordRepository
 
 class WordViewModel(application: Application) : AndroidViewModel(application) {
     private val repository: WordRepository
     val allWords: LiveData<List<Word>>
 
     init {
-        val wordsDao = WordRoomDatabase.getDatabase(application).wordDao()
+        val wordsDao = WordRoomDatabase.getDatabase(application, viewModelScope).wordDao()
         repository = WordRepository(wordsDao)
         allWords = repository.allWords
     }

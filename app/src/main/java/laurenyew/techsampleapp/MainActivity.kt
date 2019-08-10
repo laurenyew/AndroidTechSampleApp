@@ -12,7 +12,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
-import laurenyew.techsampleapp.roomWithAView.RoomWithAViewActivity
+import laurenyew.techsampleapp.roomWithAView.activities.RoomWithAViewActivity
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 

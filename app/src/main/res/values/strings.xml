@@ -9,4 +9,9 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_livedata_room">LiveData+Room</string>
+
+    <!-- Room with a View -->
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
 </resources>

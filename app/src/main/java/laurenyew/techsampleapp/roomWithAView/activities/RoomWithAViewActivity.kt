@@ -1,4 +1,4 @@
-package laurenyew.techsampleapp.roomWithAView
+package laurenyew.techsampleapp.roomWithAView.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

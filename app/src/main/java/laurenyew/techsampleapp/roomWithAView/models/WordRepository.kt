@@ -1,4 +1,4 @@
-package laurenyew.techsampleapp.roomWithAView
+package laurenyew.techsampleapp.roomWithAView.models
 
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData
