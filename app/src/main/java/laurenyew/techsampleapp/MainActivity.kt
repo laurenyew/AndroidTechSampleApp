@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_livedata_room -> {
                 //TODO: Go to the livedata room code sample
-                //https://codelabs.developers.google.com/codelabs/android-room-with-a-view-kotlin/#0
+                //
             }
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
