@@ -23,6 +23,12 @@ allprojects {
     }
 }
 
+ext {
+    roomVersion = '2.2.0-alpha02'
+    androidxArchVersion = '2.1.0-alpha01'
+    coroutines = '1.3.0-RC2'
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
