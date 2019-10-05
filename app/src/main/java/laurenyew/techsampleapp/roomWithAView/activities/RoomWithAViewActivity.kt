@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.roomwithaview_activity.*
 import laurenyew.techsampleapp.R
 import laurenyew.techsampleapp.roomWithAView.data.Word
 import laurenyew.techsampleapp.roomWithAView.views.WordListAdapter
-import laurenyew.techsampleapp.viewmodels.WordViewModel
+import laurenyew.techsampleapp.roomWithAView.viewmodels.WordViewModel
 
 /***
  * LiveData + Room + MVVM

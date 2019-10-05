@@ -13,6 +13,9 @@
         </activity>
         <activity android:name=".roomWithAView.activities.RoomWithAViewActivity">
         </activity>
+        <activity android:name="laurenyew.techsampleapp.rxjava.cheesefinder.CheeseActivity"/>
+        <activity android:name="laurenyew.techsampleapp.rxjava.cheesefinder.BaseSearchActivity"/>
+        <activity android:name="laurenyew.techsampleapp.rxjava.cheesefinder.SplashActivity"/>
         <activity
                 android:name=".MainActivity"
                 android:label="@string/app_name"

@@ -9,4 +9,7 @@
     <!-- Room with a View -->
     <dimen name="small_padding">6dp</dimen>
     <dimen name="big_padding">16dp</dimen>
+
+    <!-- Cheese Finder -->
+    <dimen name="default_margin">8dp</dimen>
 </resources>

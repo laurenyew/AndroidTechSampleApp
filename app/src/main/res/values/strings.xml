@@ -9,6 +9,7 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_livedata_room">LiveData+Room</string>
+    <string name="menu_rxjava_cheesefinder">RxJava+RxAndroid (Ray Wenderlich)</string>
 
     <!-- Room with a View -->
     <string name="hint_word">Word...</string>

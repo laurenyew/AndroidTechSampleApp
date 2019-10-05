@@ -1,4 +1,4 @@
-package laurenyew.techsampleapp.viewmodels
+package laurenyew.techsampleapp.roomWithAView.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
