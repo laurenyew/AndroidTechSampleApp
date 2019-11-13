@@ -31,6 +31,8 @@
 package laurenyew.techsampleapp.rxjava.cheesefinder
 
 import io.reactivex.Observable
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_cheeses.*
 
 class CheeseActivity : BaseSearchActivity() {
@@ -40,9 +42,16 @@ class CheeseActivity : BaseSearchActivity() {
 
         val searchTextObservable = createButtonClickObservable()
 
-        searchTextObservable.subscribe { query ->
-            showResult(cheeseSearchEngine.search(query))
-        }
+        searchTextObservable
+            .subscribeOn(AndroidSchedulers.mainThread())
+            .observeOn(Schedulers.io())
+            .map { query ->
+                cheeseSearchEngine.search(query)
+            }
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe { query ->
+                showResult(query)
+            }
     }
 
     private fun createButtonClickObservable(): Observable<String> =
